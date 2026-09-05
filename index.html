@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ASERVTECPG | Servicios Técnicos Especializados — V12</title>
+<title>ASERVTECPG | Servicios Técnicos Especializados — V17</title>
 
 
 <meta name="description" content="ASERVTECPG ofrece servicio técnico especializado para llenadoras y líneas de envasado industrial: diagnóstico, mantenimiento, regulación, puesta en marcha, paradas de planta e informes técnicos. Chile y proyectos internacionales.">
@@ -10,7 +10,7 @@
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#031b2d">
 <meta property="og:title" content="ASERVTECPG | Especialista en Llenadoras y Líneas de Envasado">
-<meta property="og:description" content="Experiencia para entender el problema. Conocimiento para encontrar la solución.">
+<meta property="og:description" content="EXPERIENCIA PARA ENTENDER EL PROBLEMA. CONOCIMIENTO PARA ENCONTRAR LA SOLUCIÓN.">
 <meta property="og:type" content="website">
 
 <style>
@@ -101,6 +101,481 @@ input,textarea,select{
 textarea{min-height:130px;resize:vertical}
 @media(max-width:700px){
   }
+
+/* V13 — responsive mobile: mantiene la identidad visual y adapta navegación, tipografía, tarjetas y formularios */
+.mobile-menu-toggle{display:none;background:transparent;border:1px solid rgba(255,255,255,.28);border-radius:7px;width:44px;height:44px;padding:9px;cursor:pointer}
+.mobile-menu-toggle span{display:block;height:2px;background:#fff;margin:5px 0;border-radius:2px}
+@media(max-width:1000px){
+  header{height:74px}
+  .nav{height:74px;position:relative}
+  .logo,.logo svg{width:250px;height:auto}
+  .mobile-menu-toggle{display:block;flex:0 0 auto}
+  nav{position:absolute;display:none;top:74px;left:0;right:0;background:var(--navy);padding:8px 4%;gap:0;box-shadow:0 12px 24px rgba(0,0,0,.18);border-top:1px solid rgba(255,255,255,.08)}
+  nav.is-open{display:flex;flex-direction:column}
+  nav a{padding:15px 8px;border-bottom:1px solid rgba(255,255,255,.10);font-size:12px}
+  nav a:last-child{border-bottom:0}
+  nav a:hover{border-color:transparent;color:var(--green)}
+  section[id]{scroll-margin-top:82px}
+  .hero{height:auto;min-height:500px}
+  .hero-inner{padding-top:72px;padding-bottom:58px}
+  .hero h1{font-size:clamp(38px,7vw,48px);line-height:1.05;max-width:620px}
+  .motto{font-size:19px;max-width:520px}
+  .spec-grid,.services,.mods,.contact-grid,.foot{grid-template-columns:1fr}
+  .spec-grid{gap:24px}
+  .services{gap:0}
+  .mods{gap:12px}
+  .contact-grid{gap:22px}
+  .foot{gap:24px}
+}
+@media(max-width:620px){
+  .wrap{width:min(100% - 28px,1280px)}
+  header{height:68px}
+  .nav{height:68px}
+  .logo,.logo svg{width:205px}
+  .mobile-menu-toggle{width:42px;height:42px}
+  nav{top:68px;padding:6px 14px}
+  nav a{padding:14px 7px}
+  .hero{min-height:0}
+  .hero-inner{padding-top:54px;padding-bottom:48px}
+  .hero h1{font-size:clamp(32px,10vw,42px);letter-spacing:-.8px;margin-bottom:16px}
+  .motto{font-size:17px;line-height:1.5}
+  .btn{width:100%;text-align:center;padding:14px 18px;margin-top:20px}
+  section{padding:38px 0}
+  .section-title{gap:10px;margin-bottom:9px}
+  .section-title h2{font-size:24px;line-height:1.15;text-align:center}
+  .target{width:42px;height:42px;font-size:21px;flex:0 0 42px}
+  .intro{font-size:14px;line-height:1.55;margin-bottom:24px;text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:normal}
+  .real-photo{height:220px;border-radius:12px}
+  .caption{margin-top:-62px;padding:16px 18px;border-radius:0 0 12px 12px}
+  .caption strong{font-size:20px}
+  .feature{grid-template-columns:46px 1fr;gap:10px;padding:12px 0}
+  .ficon{width:42px;height:42px;font-size:20px}
+  .feature h3{font-size:15px;line-height:1.25}
+  .feature p,.system-row span,.service p,.mod p{font-size:12.5px;line-height:1.45}
+  .system{padding:18px;border-radius:12px}
+  .brand-row{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+  .brand-item{font-size:14px;text-align:center;padding:9px 5px}
+  .service{padding:15px 0}
+  .service h3{font-size:16px;line-height:1.3}
+  .mod{padding:17px}
+  form{grid-template-columns:1fr;gap:10px}
+  input,textarea{font-size:16px;padding:13px}
+  textarea{grid-column:auto;min-height:125px}
+  form .btn{width:100%}
+  .contact-card{padding:21px}
+  .contact-card h3{font-size:21px}
+  footer{padding-top:28px}
+  .copy{line-height:1.45}
+}
+@media(max-width:380px){
+  .logo,.logo svg{width:185px}
+  .hero h1{font-size:31px}
+  .motto{font-size:16px}
+  .brand-row{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  a,.btn,.logo svg{transition:none!important}
+}
+
+/* V34 — solo el bloque de válvulas/flujómetros en responsive */
+@media (max-width: 620px){
+  .band-mobile-extra{
+    background:#064b78!important;
+    color:#fff!important;
+    border-radius:12px!important;
+    padding:10px 12px!important;
+    font-style:italic!important;
+    font-weight:700!important;
+  }
+}
+
+/* V36 — restauración explícita del texto bajo LLENADORAS, solo móvil */
+@media (max-width: 620px){
+  .brand-row .brand-item:first-child::after{
+    content:"VÁLVULAS EXTERNAS · VÁLVULAS SUMERGIDAS · FLUJÓMETROS"!important;
+    display:block!important;
+    width:100%!important;
+    margin:8px auto 0!important;
+    padding:7px 8px!important;
+    box-sizing:border-box!important;
+    color:#fff!important;
+    background:#064b78!important;
+    border-radius:8px!important;
+    font-size:10px!important;
+    line-height:1.3!important;
+    font-weight:800!important;
+    font-style:italic!important;
+    letter-spacing:.15px!important;
+    text-align:center!important;
+    white-space:normal!important;
+  }
+}
+
+/* V37 — mismo tratamiento visual para LLENADORAS y su texto adicional, solo móvil */
+@media (max-width: 620px){
+  .brand-row .brand-item:first-child{
+    background:#064b78!important;
+    color:#fff!important;
+    border-radius:10px!important;
+    padding:10px 9px!important;
+    font-style:italic!important;
+  }
+
+  .brand-row .brand-item:first-child::after{
+    background:#064b78!important;
+    color:#fff!important;
+    font-style:italic!important;
+  }
+}
+
+<style id="v39-experiencia-mobile">
+@media (max-width:620px){
+  #experiencia .intro{
+    text-align:justify!important;
+    margin:0 2px 14px!important;
+    line-height:1.45!important;
+  }
+  #experiencia .services{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:9px!important;
+  }
+  #experiencia .service{
+    padding:10px 11px!important;
+    margin:0!important;
+  }
+  #experiencia .service h3{
+    margin:0 0 4px!important;
+    font-size:12px!important;
+    line-height:1.25!important;
+  }
+  #experiencia .service p{
+    margin:0!important;
+    text-align:justify!important;
+    line-height:1.35!important;
+  }
+}
+
+<style id="v40-justificado">
+@media (max-width:620px){
+  #experiencia .section-title,
+  #experiencia .section-title h2,
+  #experiencia .intro,
+  #experiencia .service,
+  #experiencia .service h3,
+  #experiencia .service p{
+    text-align:justify!important;
+  }
+}
+
+/* V41 — Justificación de textos descriptivos en Experiencia y Especialización */
+#experiencia .intro,
+#experiencia .service p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+<style id="v42-servicios-responsive">
+@media (max-width:620px){
+  #servicios .services{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:9px!important;
+  }
+  #servicios .service{
+    margin:0!important;
+    padding:10px 11px!important;
+  }
+  #servicios .service h3{
+    margin:0 0 4px!important;
+    line-height:1.25!important;
+  }
+  #servicios .service p{
+    margin:0!important;
+    text-align:justify!important;
+    line-height:1.35!important;
+  }
+}
+
+<style id="v43-servicios-justificado">
+@media (max-width:620px){
+  #servicios .service p{
+    text-align: justify !important;
+    text-justify: inter-word !important;
+  }
+}
+
+<style id="v44-servicios-justificado-reforzado">
+#servicios .service p,
+#servicios .services .service p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto;
+}
+@media (max-width:620px){
+  #servicios .service p,
+  #servicios .services .service p {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    hyphens: auto;
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+<style id="v45-modalidades-responsive">
+#modalidades .mod p{
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto;
+}
+@media (max-width:620px){
+  #modalidades .mod p{
+    width:100%;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    text-align:justify !important;
+    text-justify:inter-word !important;
+    hyphens:auto;
+    line-height:1.4;
+  }
+}
+
+<style id="v46-contacto-responsive">
+#contacto .contact-copy p{
+  text-align:justify!important;
+  text-justify:inter-word!important;
+  hyphens:auto;
+}
+#contacto .contact-form label{
+  display:block;
+}
+#contacto .contact-form input,
+#contacto .contact-form select,
+#contacto .contact-form textarea{
+  width:100%;
+  box-sizing:border-box;
+}
+#contacto .contact-form button,
+#contacto .contact-btn,
+#contacto .contact-link{
+  cursor:pointer;
+}
+#contacto .contact-closing{
+  text-align:center;
+}
+@media (max-width:620px){
+  #contacto .contact-grid{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:16px!important;
+  }
+  #contacto .contact-copy p{
+    text-align:justify!important;
+    line-height:1.4!important;
+  }
+  #contacto .contact-form label{
+    text-align:left!important;
+  }
+  #contacto .contact-form input,
+  #contacto .contact-form select,
+  #contacto .contact-form textarea{
+    margin-top:4px!important;
+  }
+  #contacto .contact-closing{
+    text-align:center!important;
+    line-height:1.35!important;
+  }
+}
+
+<style id="v48-contacto-services">
+#contacto .services-develop{
+  margin: 0 0 22px;
+}
+#contacto .services-develop p{
+  margin: 0;
+  padding: 7px 0;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+@media (max-width:620px){
+  #contacto .services-develop{
+    margin-bottom: 18px;
+  }
+  #contacto .services-develop p{
+    padding: 6px 0;
+    line-height: 1.35;
+  }
+}
+
+<style id="v50-contacto-harmony">
+#contacto .contact-form label{
+  font-size: .78rem !important;
+  line-height: 1.25 !important;
+}
+#contacto .contact-form input,
+#contacto .contact-form select,
+#contacto .contact-form textarea{
+  font-size: .82rem !important;
+  padding: 8px 10px !important;
+  min-height: 34px !important;
+}
+#contacto .contact-form textarea{
+  min-height: 88px !important;
+}
+#contacto .contact-form button{
+  font-size: .78rem !important;
+  padding: 9px 14px !important;
+}
+#contacto .contact-closing{
+  font-size: .82rem !important;
+  line-height: 1.35 !important;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width:620px){
+  #contacto .contact-form label{
+    font-size: .74rem !important;
+  }
+  #contacto .contact-form input,
+  #contacto .contact-form select,
+  #contacto .contact-form textarea{
+    font-size: .80rem !important;
+    padding: 7px 9px !important;
+  }
+  #contacto .contact-closing{
+    font-size: .78rem !important;
+    line-height: 1.35 !important;
+  }
+}
+
+<style id="v51-contact-actions-harmony">
+#contacto .contact-actions{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px;
+}
+#contacto .contact-actions .contact-btn,
+#contacto .contact-actions .contact-link{
+  font-size:.76rem !important;
+  line-height:1.2 !important;
+  min-height:34px !important;
+  padding:8px 12px !important;
+  box-sizing:border-box;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+@media (max-width:620px){
+  #contacto .contact-actions{
+    gap:7px;
+  }
+  #contacto .contact-actions .contact-btn,
+  #contacto .contact-actions .contact-link{
+    font-size:.72rem !important;
+    min-height:32px !important;
+    padding:7px 10px !important;
+  }
+}
+
+<style id="v52-final-harmony">
+.contact-invite{
+  font-size:.82rem;
+  line-height:1.35;
+  text-align:center;
+  margin:12px auto 10px;
+  max-width:720px;
+}
+@media (max-width:620px){
+  .contact-invite{
+    font-size:.78rem;
+    line-height:1.35;
+    margin:10px auto 8px;
+  }
+}
+</style>
+</style>
+</style>
+</style>
+</style>
+</style>
+</style>
+</style>
+</style>
+</style>
+</style>
+</style>
+
+
+<style id="v49-servicios-desarrollar">
+/* V49 — solo la lista de SERVICIOS A DESARROLLAR */
+#contacto .services-develop{
+  margin:0 0 18px !important;
+  padding:0 !important;
+}
+#contacto .services-develop p{
+  margin:0 !important;
+  padding:2px 0 !important;
+  font-size:12.5px !important;
+  line-height:1.22 !important;
+  font-weight:600 !important;
+  letter-spacing:.01em !important;
+  text-align:justify !important;
+  text-justify:inter-word !important;
+  hyphens:auto !important;
+}
+@media (max-width:620px){
+  #contacto .services-develop{
+    margin-bottom:14px !important;
+  }
+  #contacto .services-develop p{
+    padding:1.5px 0 !important;
+    font-size:10.8px !important;
+    line-height:1.24 !important;
+    text-align:justify !important;
+    text-justify:inter-word !important;
+  }
+}
+</style>
+<style id="v29-llenadoras-detalle-mobile">
+/* V29 — solo responsive: agrega detalle técnico bajo LLENADORAS sin alterar el resto */
+@media (max-width: 620px){
+  .brand-row .brand-item:first-child::after{
+    content:"VÁLVULAS EXTERNAS · VÁLVULAS SUMERGIDAS · FLUJÓMETROS";
+    display:block;
+    margin:6px auto 0;
+    max-width:150px;
+    color:var(--orange,#ff7a00);
+    font-size:8.5px;
+    line-height:1.25;
+    font-weight:800;
+    letter-spacing:.25px;
+    text-align:center;
+  }
+  .brand-row .brand-item:nth-child(2)::after{
+    content:"CANS/LATA";
+    display:block;
+    margin:6px auto 0;
+    color:var(--orange,#ff7a00);
+    font-size:8.5px;
+    line-height:1.25;
+    font-weight:800;
+    letter-spacing:.25px;
+    text-align:center;
+  }
+}
+@media (max-width:380px){
+  .brand-row .brand-item:first-child::after{
+    max-width:170px;
+    font-size:8px;
+  }
+}
 </style>
 
 <style id="prueba-lema-pie-naranja">
@@ -201,11 +676,373 @@ footer h3,.footer-title{
 }
 </style>
 
+<style id="v14-mobile-hero-correction">
+/* V14 — ajuste fino del primer pantallazo en teléfonos */
+@media (max-width: 620px){
+  header{height:68px!important}
+  .nav{height:68px!important}
+  .logo{width:205px!important;height:auto!important;max-width:calc(100% - 58px)!important}
+  .logo svg{width:205px!important;height:auto!important;max-width:100%!important}
+  .mobile-menu-toggle{width:42px!important;height:42px!important;flex:0 0 42px!important}
+  nav{top:68px!important}
+
+  .hero{
+    min-height:0!important;
+    height:auto!important;
+    overflow:hidden!important;
+  }
+  .hero-inner{
+    padding-top:34px!important;
+    padding-bottom:34px!important;
+    width:min(100% - 28px,1280px)!important;
+  }
+  .hero .eyebrow{
+    font-size:17px!important;
+    line-height:1.25!important;
+    margin-bottom:8px!important;
+  }
+  .hero h1{
+    font-size:36px!important;
+    line-height:1.02!important;
+    letter-spacing:-.8px!important;
+    margin:0 0 15px!important;
+    max-width:100%!important;
+    overflow-wrap:normal!important;
+  }
+  .hero .rule{width:72px!important;height:4px!important;margin-bottom:14px!important}
+  .hero .motto{
+    font-size:17px!important;
+    line-height:1.42!important;
+    max-width:100%!important;
+  }
+  .hero .btn{
+    width:100%!important;
+    margin-top:18px!important;
+    padding:14px 18px!important;
+    text-align:center!important;
+  }
+  .hero-fragmented-ring{opacity:.12!important;right:0!important;width:270px!important;height:270px!important}
+}
+@media (max-width: 380px){
+  .logo,.logo svg{width:185px!important}
+  .hero-inner{padding-top:30px!important;padding-bottom:30px!important}
+  .hero .eyebrow{font-size:16px!important}
+  .hero h1{font-size:32px!important;letter-spacing:-.6px!important}
+  .hero .motto{font-size:16px!important}
+}
+.system-row span{text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
+/* V25: justificación real de los textos de Visión de Sistema en móvil */
+.system .system-row span {
+  display: block;
+  text-align: justify !important;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+</style>
+
+
+<style id="v15-mobile-hero-compact">
+/* V15 — hero móvil compacto: prioriza contenido visible en el primer pantallazo */
+@media (max-width: 620px){
+  .hero{
+    height:390px!important;
+    min-height:390px!important;
+  }
+  .hero-inner{
+    padding-top:24px!important;
+    padding-bottom:22px!important;
+  }
+  .hero .eyebrow{
+    font-size:16px!important;
+    line-height:1.2!important;
+    margin-bottom:6px!important;
+  }
+  .hero h1{
+    font-size:34px!important;
+    line-height:1.0!important;
+    letter-spacing:-.7px!important;
+    margin-bottom:12px!important;
+  }
+  .hero .rule{
+    width:64px!important;
+    height:3px!important;
+    margin-bottom:11px!important;
+  }
+  .hero .motto{
+    font-size:16px!important;
+    line-height:1.32!important;
+  }
+  .hero .btn{
+    margin-top:15px!important;
+    padding:12px 16px!important;
+  }
+  .hero-fragmented-ring{
+    width:230px!important;
+    height:230px!important;
+    right:-8%!important;
+    opacity:.09!important;
+  }
+}
+@media (max-width:380px){
+  .hero{height:370px!important;min-height:370px!important}
+  .hero-inner{padding-top:20px!important;padding-bottom:18px!important}
+  .hero h1{font-size:31px!important}
+  .hero .motto{font-size:15px!important}
+}
+</style>
+
+
+
+<style id="v16-mobile-hero-tighter">
+/* V16 — segundo ajuste: reduce un poco más la altura del hero móvil sin sacrificar lectura */
+@media (max-width: 620px){
+  .hero{
+    height:320px!important;
+    min-height:320px!important;
+  }
+  .hero-inner{
+    padding-top:18px!important;
+    padding-bottom:18px!important;
+  }
+  .hero .eyebrow{
+    font-size:15px!important;
+    line-height:1.15!important;
+    margin-bottom:5px!important;
+  }
+  .hero h1{
+    font-size:32px!important;
+    line-height:.98!important;
+    letter-spacing:-.65px!important;
+    margin-bottom:9px!important;
+  }
+  .hero .rule{
+    width:58px!important;
+    height:3px!important;
+    margin-bottom:9px!important;
+  }
+  .hero .motto{
+    font-size:15px!important;
+    line-height:1.25!important;
+  }
+  .hero .btn{
+    margin-top:11px!important;
+    padding:10px 15px!important;
+  }
+  .hero-fragmented-ring{
+    width:205px!important;
+    height:205px!important;
+    right:-10%!important;
+    opacity:.07!important;
+  }
+}
+@media (max-width:380px){
+  .hero{height:300px!important;min-height:300px!important}
+  .hero-inner{padding-top:15px!important;padding-bottom:15px!important}
+  .hero .eyebrow{font-size:14px!important}
+  .hero h1{font-size:29px!important}
+  .hero .motto{font-size:14px!important}
+  .hero .btn{margin-top:9px!important;padding:9px 14px!important}
+}
+</style>
+
+
+
+<style id="v17-mobile-hero-full-title">
+/* V17 — móvil: el titular completo siempre visible, sin recortes */
+@media (max-width: 620px){
+  .hero{
+    height:auto!important;
+    min-height:0!important;
+    overflow:hidden!important;
+  }
+  .hero-inner{
+    padding-top:24px!important;
+    padding-bottom:28px!important;
+  }
+  .hero .eyebrow{
+    font-size:16px!important;
+    line-height:1.2!important;
+    margin-bottom:8px!important;
+  }
+  .hero h1{
+    font-size:34px!important;
+    line-height:1.02!important;
+    letter-spacing:-.7px!important;
+    margin:0 0 12px!important;
+    max-width:100%!important;
+    white-space:normal!important;
+    overflow:visible!important;
+  }
+  .hero .rule{
+    width:64px!important;
+    height:3px!important;
+    margin-bottom:12px!important;
+  }
+  .hero .motto{
+    font-size:16px!important;
+    line-height:1.34!important;
+    max-width:100%!important;
+  }
+  .hero .btn{
+    margin-top:16px!important;
+    padding:12px 16px!important;
+  }
+  .hero-fragmented-ring{
+    width:210px!important;
+    height:210px!important;
+    right:-10%!important;
+    opacity:.07!important;
+  }
+}
+@media (max-width:380px){
+  .hero-inner{padding-top:20px!important;padding-bottom:24px!important}
+  .hero .eyebrow{font-size:15px!important}
+  .hero h1{font-size:31px!important;line-height:1.01!important}
+  .hero .motto{font-size:15px!important;line-height:1.3!important}
+}
+</style>
+
+<style id="v23-mobile-header-overlap-fix">
+/* V23 — evita que el contenido del hero se pinte por encima del encabezado fijo en móvil */
+@media (max-width: 620px){
+  header{
+    position:sticky!important;
+    top:0!important;
+    z-index:100!important;
+  }
+  .hero{
+    position:relative!important;
+    z-index:0!important;
+    isolation:isolate!important;
+  }
+  .hero-inner{
+    position:relative!important;
+    z-index:2!important;
+  }
+  .hero-fragmented-ring{z-index:1!important}
+  .hero:before,.hero:after{z-index:0!important}
+}
+</style>
+
+
+<style id="v38-experiencia-multimarca-mobile">
+/* V38 — SOLO RESPONSIVE: unifica toda la franja de experiencia multimarca */
+@media (max-width: 620px){
+  .band{
+    background:#064b78 !important;
+    color:#fff !important;
+    margin:0 14px !important;
+    padding:22px 14px 24px !important;
+    border-radius:14px !important;
+    box-sizing:border-box !important;
+  }
+
+  .band .wrap{
+    width:100% !important;
+  }
+
+  .band-title{
+    color:#fff !important;
+    font-style:italic !important;
+    margin:0 0 14px !important;
+  }
+
+  .brand-row{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:8px !important;
+    align-items:stretch !important;
+  }
+
+  .brand-item{
+    color:#fff !important;
+    font-style:italic !important;
+    text-align:center !important;
+    padding:7px 5px !important;
+  }
+
+  .brand-row .brand-item:first-child{
+    background:transparent !important;
+    border-radius:0 !important;
+  }
+
+  .brand-row .brand-item:first-child::after{
+    content:"VÁLVULAS EXTERNAS · VÁLVULAS SUMERGIDAS · FLUJÓMETROS" !important;
+    display:block !important;
+    width:100% !important;
+    margin:6px auto 0 !important;
+    padding:0 !important;
+    color:#fff !important;
+    background:transparent !important;
+    border-radius:0 !important;
+    font-size:10px !important;
+    line-height:1.35 !important;
+    font-weight:800 !important;
+    font-style:italic !important;
+    letter-spacing:.1px !important;
+    text-align:center !important;
+    white-space:normal !important;
+  }
+
+  .brand-row .brand-item:nth-child(2)::after{
+    content:none !important;
+    display:none !important;
+  }
+}
+
+@media (max-width:380px){
+  .band{
+    margin:0 10px !important;
+    padding-left:10px !important;
+    padding-right:10px !important;
+  }
+
+  .brand-row .brand-item:first-child::after{
+    font-size:9px !important;
+  }
+}
+</style>
+
+
+
+
+
+<style id="slogan-responsive-fix-v55">
+@media (max-width: 700px) {
+  .logo-tagline,
+  .tagline,
+  .brand-tagline,
+  .header-tagline,
+  .logo-subtitle {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+    font-size: 8px !important;
+    line-height: 1.15 !important;
+    letter-spacing: 0 !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+}
+</style>
+
+
+<style id="slogan-svg-mobile-v56">
+@media (max-width: 620px) {
+  .logo svg { overflow: visible !important; }
+}
+</style>
+
 </head>
 <body>
 <header><div class="wrap nav">
 <a href="#inicio" class="logo" aria-label="ASERVTECPG">
-<svg viewBox="0 0 455 82" role="img" style="width:455px;height:82px">
+<svg viewBox="0 0 455 108" role="img" style="width:455px;height:108px">
 <defs>
  <linearGradient id="v10g" x1="0" y1="1" x2="1" y2="0">
   <stop stop-color="#4da900"/><stop offset=".5" stop-color="#7ddd0b"/><stop offset="1" stop-color="#b5f35b"/>
@@ -228,10 +1065,12 @@ footer h3,.footer-title{
 <!-- núcleo limpio -->
 <circle cx="47" cy="42" r="5" fill="#031b2d" stroke="#9ae63c" stroke-width="2"/>
 <text x="103" y="51" fill="#ff7a00" font-size="32" font-weight="900" font-style="italic" letter-spacing=".1">ASERVTECPG</text>
-<text x="105" y="69" fill="#7ddd0b" font-size="10" font-weight="700" letter-spacing="1.3">SERVICIOS TÉCNICOS ESPECIALIZADOS</text>
+<text x="105" y="69" fill="#7ddd0b" font-size="14" font-weight="700" font-style="italic" letter-spacing=".15" textLength="325" lengthAdjust="spacingAndGlyphs">EXPERIENCIA PARA ENTENDER EL PROBLEMA.</text>
+<text x="105" y="94" fill="#7ddd0b" font-size="14" font-weight="700" font-style="italic" letter-spacing=".15" textLength="325" lengthAdjust="spacingAndGlyphs">CONOCIMIENTO PARA ENCONTRAR LA SOLUCIÓN.</text>
 </svg>
 </a>
-<nav><a href="#inicio">Inicio</a><a href="#especialidades">Especialidades</a><a href="#experiencia">Experiencia</a><a href="#servicios">Servicios</a><a href="#modalidades">Modalidades</a><a href="#contacto">Contacto</a></nav>
+<button class="mobile-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
+<nav id="site-menu"><a href="#inicio">Inicio</a><a href="#especialidades">Especialidades</a><a href="#experiencia">Experiencia</a><a href="#servicios">Servicios</a><a href="#modalidades">Modalidades</a><a href="#contacto">Contacto</a></nav>
 </div></header>
 
 <main id="inicio">
@@ -280,42 +1119,140 @@ footer h3,.footer-title{
 <div class="feature"><div class="ficon">↗</div><div><h3>Mejora continua</h3><p>Implementamos acciones para evitar recurrencias y mejorar el rendimiento de la línea.</p></div></div>
 </div>
 <div class="system"><h3>Visión de Sistema</h3><p>Una línea de envasado es un sistema.</p>
-<div class="system-row"><b>Enfoque integral</b><span>Consideramos todos los equipos que componen la línea para lograr un diagnóstico preciso.</span></div>
-<div class="system-row"><b>Diagnóstico preciso</b><span>Entendemos cómo interactúan sus equipos para encontrar el origen del problema.</span></div>
-<div class="system-row"><b>Soluciones efectivas</b><span>Aplicamos soluciones técnicas orientadas a continuidad y confiabilidad.</span></div>
-<div class="system-row"><b>Prevención y mejora</b><span>Buscamos evitar recurrencias y mejorar el rendimiento de la línea.</span></div>
+<div class="system-row"><b>Enfoque integral</b><span>Analizamos la línea como un conjunto, considerando los equipos que la integran y la relación entre ellos para entender el comportamiento del sistema.</span></div>
+<div class="system-row"><b>Diagnóstico preciso</b><span>Evaluamos la interacción entre los equipos y sus condiciones de operación para identificar el origen de la desviación.</span></div>
+<div class="system-row"><b>Soluciones efectivas</b><span>Definimos acciones técnicas orientadas a recuperar las condiciones de operación y favorecer una mayor confiabilidad del sistema.</span></div>
+<div class="system-row"><b>Prevención y mejora</b><span>Orientamos las acciones hacia la prevención de recurrencias y la identificación de oportunidades de mejora en el funcionamiento de la línea.</span></div>
 </div>
 </div></div></section>
 
 <div class="band"><div class="wrap"><div class="band-title">EXPERIENCIA MULTIMARCA Y MULTIPROCESO</div>
-<div class="brand-row"><div class="brand-item">LLENADORAS</div><div class="brand-item">PET · VIDRIO</div><div class="brand-item">PROCESOS ASÉPTICOS</div><div class="brand-item">LÍNEAS DE ENVASADO</div></div></div></div>
+<div class="brand-row"><div class="brand-item">LLENADORAS</div><div class="brand-item">PET · VIDRIO · CANS/LATA</div><div class="brand-item">PROCESOS ASÉPTICOS</div><div class="brand-item">LÍNEAS DE ENVASADO</div></div></div></div>
 
-<section id="experiencia"><div class="wrap"><div class="section-title"><h2>EXPERIENCIA Y ESPECIALIZACIÓN</h2></div><div class="blue-rule"></div>
+<section id="experiencia"><div class="wrap">
+<div class="section-title"><h2>EXPERIENCIA Y ESPECIALIZACIÓN</h2></div>
+<div class="blue-rule"></div>
+<p class="intro">Más de 30 años de experiencia técnica en equipos y líneas de envasado, desde el diagnóstico de fallas hasta la puesta en marcha y estabilización de los procesos.</p>
 <div class="services">
-<div class="service"><h3>Diagnóstico y troubleshooting</h3><p>Identificación de fallas, análisis de síntomas y causa raíz.</p></div>
-<div class="service"><h3>Mantenimiento preventivo y correctivo</h3><p>Intervenciones planificadas y correctivas.</p></div>
-<div class="service"><h3>Regulación y ajustes</h3><p>Regulación mecánica y de proceso.</p></div>
-<div class="service"><h3>Intervenciones en sistemas de llenado</h3><p>Apoyo especializado en trabajos específicos.</p></div>
-<div class="service"><h3>Paradas de planta</h3><p>Apoyo durante ventanas de mantenimiento.</p></div>
-<div class="service"><h3>Puesta en marcha y commissioning</h3><p>Pruebas, ajustes y estabilización.</p></div>
+<div class="service"><h3>DIAGNÓSTICO Y TROUBLESHOOTING</h3><p>Identificación de fallas, análisis de síntomas y causa raíz.</p></div>
+<div class="service"><h3>MANTENIMIENTO PREVENTIVO Y CORRECTIVO</h3><p>Intervenciones planificadas y correctivas orientadas a la confiabilidad y continuidad operacional.</p></div>
+<div class="service"><h3>REGULACIÓN Y AJUSTES</h3><p>Regulación mecánica y de proceso para recuperar las condiciones correctas de operación.</p></div>
+<div class="service"><h3>SISTEMAS DE LLENADO</h3><p>Intervenciones especializadas en válvulas, flujómetros y sistemas asociados.</p></div>
+<div class="service"><h3>PARADAS DE PLANTA</h3><p>Participación técnica durante ventanas de mantenimiento, con foco en una intervención ordenada y eficiente.</p></div>
+<div class="service"><h3>PUESTA EN MARCHA Y COMMISSIONING</h3><p>Pruebas, ajustes y estabilización antes del retorno a producción.</p></div>
 </div></div></section>
 
-<section id="servicios"><div class="wrap"><div class="section-title"><h2>SERVICIOS</h2></div><div class="blue-rule"></div>
+<section id="servicios"><div class="wrap">
+<div class="section-title"><h2>SERVICIOS</h2></div>
+<div class="blue-rule"></div>
 <div class="services">
-<div class="service"><h3>Evaluación técnica y repuestos</h3><p>Evaluación de componentes e identificación de repuestos.</p></div>
-<div class="service"><h3>Informes y documentación</h3><p>Registro técnico de trabajos, hallazgos y recomendaciones.</p></div>
-<div class="service"><h3>Soporte remoto</h3><p>Orientación técnica para diagnóstico y decisiones.</p></div>
+<div class="service"><h3>INTERVENCIÓN TÉCNICA EN TERRENO</h3><p>Diagnóstico, mantenimiento, regulación y solución de fallas directamente en el equipo o línea.</p></div>
+<div class="service"><h3>MANTENIMIENTO Y RECUPERACIÓN OPERACIONAL</h3><p>Intervenciones orientadas a recuperar condiciones de operación, confiabilidad y continuidad productiva.</p></div>
+<div class="service"><h3>PARADAS DE PLANTA</h3><p>Apoyo técnico durante paradas programadas, con planificación de actividades, ejecución y puesta en servicio.</p></div>
+<div class="service"><h3>PUESTA EN MARCHA Y COMMISSIONING</h3><p>Pruebas, ajustes, verificación de funcionamiento y estabilización antes del retorno a producción.</p></div>
+<div class="service"><h3>EVALUACIÓN E INFORME TÉCNICO</h3><p>Inspección del equipo, identificación de hallazgos, análisis técnico y documentación de recomendaciones.</p></div>
+<div class="service"><h3>SOPORTE Y ASESORÍA TÉCNICA</h3><p>Orientación para analizar problemas, definir acciones y apoyar decisiones técnicas a distancia.</p></div>
 </div></div></section>
 
-<section id="modalidades" class="dark"><div class="wrap"><div class="section-title"><h2>MODALIDADES DE SERVICIO</h2></div><div class="blue-rule"></div>
-<p class="intro">La intervención se adapta a la necesidad técnica y al alcance de cada proyecto.</p>
-<div class="mods"><div class="mod"><b>Intervención puntual</b><p>Para una falla, ajuste o necesidad concreta.</p></div><div class="mod"><b>Jornadas de mantenimiento</b><p>Participación técnica por jornadas.</p></div><div class="mod"><b>Parada de planta</b><p>Apoyo durante ventanas de mantenimiento.</p></div><div class="mod"><b>Commissioning</b><p>Puesta en marcha y estabilización.</p></div><div class="mod"><b>Evaluación técnica</b><p>Inspección, diagnóstico e informe.</p></div><div class="mod"><b>Proyecto</b><p>Participación según alcance y requerimientos.</p></div></div>
+<section id="modalidades" class="dark"><div class="wrap">
+<div class="section-title"><h2>MODALIDADES DE SERVICIO</h2></div><div class="blue-rule"></div>
+<p class="intro">Adaptamos la participación técnica a la necesidad, alcance y duración de cada proyecto.</p>
+<div class="mods">
+<div class="mod"><b>INTERVENCIÓN PUNTUAL</b><p>Atención técnica para una necesidad específica, con un alcance claramente definido.</p></div>
+<div class="mod"><b>JORNADAS DE MANTENIMIENTO</b><p>Participación técnica por jornadas, de acuerdo con la planificación y requerimientos del cliente.</p></div>
+<div class="mod"><b>PARADA DE PLANTA</b><p>Apoyo especializado durante ventanas de mantenimiento, coordinado con las actividades de la planta.</p></div>
+<div class="mod"><b>PUESTA EN MARCHA Y COMMISSIONING</b><p>Participación durante pruebas, ajustes, puesta en marcha y estabilización de equipos y procesos.</p></div>
+<div class="mod"><b>EVALUACIÓN TÉCNICA</b><p>Inspección y análisis del estado del equipo, con hallazgos y recomendaciones documentadas.</p></div>
+<div class="mod"><b>PROYECTO TÉCNICO</b><p>Participación según alcance, duración, requerimientos y condiciones particulares del proyecto.</p></div>
+</div>
 </div></section>
 
-<section id="contacto"><div class="wrap"><div class="section-title"><h2>CONTACTO</h2></div><div class="blue-rule"></div>
-<div class="contact-grid"><div class="contact-card"><h3>Solicitar servicio</h3><p>Atención inicialmente en Chile, con posibilidad de participación en proyectos internacionales según alcance y condiciones.</p><p><b>Servicio en terreno · Soporte remoto · Evaluaciones técnicas</b></p></div>
-<form onsubmit="event.preventDefault();alert('Formulario de demostración. En la versión final se conectará al correo de ASERVTECPG.');"><input placeholder="Nombre"><input placeholder="Empresa"><input placeholder="Correo electrónico"><input placeholder="Teléfono"><input placeholder="Ubicación de planta"><input placeholder="Equipo / proceso"><textarea placeholder="Describa brevemente la necesidad técnica"></textarea><button class="btn">Enviar solicitud</button></form></div>
+<section id="contacto"><div class="wrap">
+<div class="section-title"><h2>CONTACTO</h2></div><div class="blue-rule"></div>
+<div class="contact-grid">
+<div class="contact-copy">
+<h3>SERVICIOS A DESARROLLAR</h3>
+<div class="services-develop">
+<p>SUPERVISIÓN E INSTALACIÓN DE EQUIPOS DE PRODUCCIÓN DE ENVASADO</p>
+<p>PUESTAS EN MARCHA START-UP</p>
+<p>DIAGNÓSTICO DE EQUIPOS Y LÍNEAS DE ENVASADO</p>
+<p>MANTENIMIENTOS</p>
+<p>MODIFICACIONES</p>
+<p>LEVANTAMIENTOS E INSPECCIÓN</p>
+<p>REPUESTOS</p>
+<p>EXPERTIZ EN LLENADO CONVENCIONAL</p>
+<p>VOLUMÉTRICO</p>
+<p>ASÉPTICO</p>
+<p>MANTENIMIENTO SKID DE PROCESO</p>
+<p>CAPDIS</p>
+<p>COLECTOR SUP-INF.</p>
+<p>DISTRIBUCIÓN</p>
+<p>FLUJO</p>
+<p>CIP/SIP</p>
+<p>COP/SOP</p>
+<p>ENTRADA DE PRODUCTO</p>
+</div>
+
+<p class="contact-invite">CUÉNTANOS QUÉ NECESITAS Y EVALUAREMOS LA MEJOR FORMA DE APOYARTE.</p>
+<div class="contact-actions">
+<a class="contact-btn" href="#formulario">SOLICITAR EVALUACIÓN TÉCNICA</a>
+<a class="contact-link" href="mailto:sertecpg@gmail.com">CORREO</a>
+<a class="contact-link" href="https://wa.me/56952284666">WHATSAPP</a>
+</div>
+</div>
+<form id="formulario" class="contact-form" action="mailto:sertecpg@gmail.com" method="post" enctype="text/plain">
+<label>NOMBRE / EMPRESA<input type="text" name="Nombre / Empresa" required></label>
+<label>CORREO O TELÉFONO<input type="text" name="Contacto" required></label>
+<label>EQUIPO O LÍNEA<input type="text" name="Equipo o línea"></label>
+<label>¿QUÉ NECESITAS?<select name="Necesidad">
+<option value="">Seleccionar</option>
+<option>Mantenimiento correctivo</option>
+<option>Mantenimiento preventivo</option>
+<option>Revisión de repuestos</option>
+<option>Asesoría técnica</option>
+<option>Proyectos de mantenimiento</option>
+<option>Levantamiento de producción</option>
+<option>Otros requerimientos técnicos</option>
+</select></label>
+<label>DESCRIBE BREVEMENTE EL PROBLEMA<textarea name="Descripción" rows="4"></textarea></label>
+<button type="submit">ENVIAR SOLICITUD</button>
+</form>
+</div>
+<div class="contact-closing">NO NOS LIMITAMOS A IDENTIFICAR EL SÍNTOMA.<br>BUSCAMOS LA CAUSA Y LA SOLUCIÓN.</div>
 </div></section>
 </main>
 <footer><div class="wrap"><div class="foot"><div><h3>ASERVTECPG</h3><p>SERVICIOS TÉCNICOS ESPECIALIZADOS</p><p class="footer-motto">Experiencia para entender el problema.<br>Conocimiento para encontrar la solución.</p></div><div><h3>ENLACES</h3><ul><li>Inicio</li><li>Especialidades</li><li>Experiencia</li><li>Servicios</li><li>Contacto</li></ul></div><div><h3>SERVICIOS</h3><ul><li>Diagnóstico</li><li>Mantenimiento</li><li>Regulación</li><li>Puesta en marcha</li><li>Asistencia técnica</li></ul></div><div><h3>COBERTURA</h3><p>Chile</p><p>Atención en terreno y remota</p><p>Proyectos internacionales según alcance</p></div></div><div class="copy">© 2026 ASERVTECPG. Todos los derechos reservados.</div></div></footer>
+
+<script>
+(function(){
+  const toggle=document.querySelector('.mobile-menu-toggle');
+  const menu=document.getElementById('site-menu');
+  if(!toggle||!menu) return;
+  toggle.addEventListener('click',function(){
+    const open=menu.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded',String(open));
+    toggle.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');
+  });
+  menu.querySelectorAll('a').forEach(function(link){
+    link.addEventListener('click',function(){
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded','false');
+      toggle.setAttribute('aria-label','Abrir menú');
+    });
+  });
+  window.addEventListener('resize',function(){
+    if(window.innerWidth>1000){
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded','false');
+    }
+  });
+})();
+</script>
+
+<style id="v32-eliminar-texto-naranja-brand">
+@media (max-width: 768px){
+  .brand-row .brand-item::after{content:none !important; display:none !important;}
+}
+</style>
+
 </body></html>
